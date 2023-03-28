@@ -1,0 +1,9 @@
+SELECT per-name FROM Purchase, Product, Person WHERE per-name = buyer AND product = pname AND category = ‘telephony’;
+
+SELECT buyer FROM Purchase, Company WHERE seller = cname AND country = ‘American’;
+
+SELECT per-name FROM Purchase, Company WHERE seller=cname AND country = "American" AND city='Seattle';
+
+SELECT per-name, phone number, city FROM person, purchase WHERE per-name=buyer AND per-name = seller;
+
+SELECT per-name, phone number, city FROM person, purchase, Company WHERE seller="Joe" OR stockprice>50;
